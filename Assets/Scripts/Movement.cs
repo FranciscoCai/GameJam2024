@@ -22,7 +22,6 @@ public class Movement : MonoBehaviour
         float verticalInput = Input.GetAxis("Vertical");
 
         Vector2 movement = new Vector2(horizontalInput, verticalInput);
-        movement.Normalize();
 
         rb.velocity = movement * moveSpeed;
     }

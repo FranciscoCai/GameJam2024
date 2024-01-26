@@ -5,7 +5,6 @@ using UnityEngine;
 public class Interaction : MonoBehaviour
 {
     [SerializeField] private float circleArea;
-    private bool gameObjectExist;
     [SerializeField] private LayerMask gameObjectInteratuable;
     void Start()
     {
@@ -20,10 +19,19 @@ public class Interaction : MonoBehaviour
     }
     private void DetectGameObject()
     {
-        gameObjectExist = Physics2D.OverlapCircle(this.transform.position, circleArea, gameObjectInteratuable);
-        if (gameObjectExist)
+        Collider2D objetoDetectado = Physics2D.OverlapCircle(transform.position, circleArea, gameObjectInteratuable);
+
+        if (objetoDetectado != null)
         {
-            BarraDeVida.Instance.ActoTerrorista(0, 10);
+            if (objetoDetectado.CompareTag("Enemy"))
+            {
+                BarraDeVida.Instance.ActoTerrorista(0, 10);
+            }
+            else if(objetoDetectado.CompareTag("PlayerBoard"))
+            {
+                gameObject.transform.position = objetoDetectado.transform.position;
+                PlayerGroup.Instance.estadoJugador = PlayerState.Trabajando;
+            }
         }
     }
 }

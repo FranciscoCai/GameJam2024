@@ -34,6 +34,7 @@ public class Interaction : MonoBehaviour
             {
                 gameObject.transform.position = objetoDetectado.transform.position;
                 PlayerGroup.Instance.estadoJugador = PlayerState.Trabajando;
+
                 animator.Play("Trabajo");
                 Debug.Log(1);
             }

@@ -28,6 +28,7 @@ public class BarraDeVida : MonoBehaviour
             Grupos[i].fillAmount += (Time.deltaTime * VelocidadDeAumentoEnGrupo[i])/ ExperienciaNecesariaLosGrupos[i];
             if (Grupos[i].fillAmount ==1)
             {
+                
                 SceneManager.LoadScene(GameOver);
             }
         }

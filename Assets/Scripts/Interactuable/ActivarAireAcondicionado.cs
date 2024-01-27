@@ -9,7 +9,7 @@ public class ActivarAireAcondicionado : MonoBehaviour, Interactuable
     {
         if(CanvasAire.activeSelf)
         {
-            BarraDeVida.Instance.ActoTerrorista(1, 10);
+            BarraDeVida.Instance.ActoTerrorista(3, 40);
             Destroy(CanvasAire);
             Destroy(this);
         }

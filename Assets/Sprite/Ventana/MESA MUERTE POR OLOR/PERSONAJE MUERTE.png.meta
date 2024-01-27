@@ -1,10 +1,13 @@
 fileFormatVersion: 2
-guid: 4d71b24aa4feb754faaab847957ef5f9
+guid: d191cbf97b5015149b349360b620f43a
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5668492713291698303
-    second: "RELOJ PEQUE\xD1O OK_0"
+      213: -1855433353349383905
+    second: PERSONAJE MUERTE_0
+  - first:
+      213: -8556399107096126022
+    second: PERSONAJE MUERTE_1
   externalObjects: {}
   serializedVersion: 12
   mipmaps:
@@ -51,7 +54,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 20
+  spritePixelsToUnits: 10
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -94,38 +97,47 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 0
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: "RELOJ PEQUE\xD1O OK_0"
+      name: PERSONAJE MUERTE_0
       rect:
         serializedVersion: 2
-        x: 79
-        y: 52
-        width: 23
-        height: 17
+        x: 42
+        y: 30
+        width: 18
+        height: 33
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 18fab5409e77551b0800000000000000
-      internalID: -5668492713291698303
+      spriteID: f19b235123d2046e0800000000000000
+      internalID: -1855433353349383905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PERSONAJE MUERTE_1
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 30
+        width: 18
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: abdd0198850914980800000000000000
+      internalID: -8556399107096126022
       vertices: []
       indices: 
       edges: []
@@ -133,7 +145,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: ad9879e47192d0d4d8f71e09c40ba093
     internalID: 0
     vertices: []
     indices: 
@@ -141,7 +153,8 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      "RELOJ PEQUE\xD1O OK_0": -5668492713291698303
+      PERSONAJE MUERTE_0: -1855433353349383905
+      PERSONAJE MUERTE_1: -8556399107096126022
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

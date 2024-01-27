@@ -13,6 +13,7 @@ public class Movement : MonoBehaviour
 
     private Animator animator;
 
+   
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -28,23 +29,35 @@ public class Movement : MonoBehaviour
 
         rb.velocity = movement * moveSpeed;
 
-        if (Input.GetKeyDown(KeyCode.W))
+        if (Input.GetKey(KeyCode.W))
         {
             animator.Play("Up");
+            
         }
-        if (Input.GetKeyDown(KeyCode.A))
+        
+        else if (Input.GetKey(KeyCode.A))
         {
             animator.Play("Left");
+            
         }
-        if (Input.GetKeyDown(KeyCode.S))
+
+        else if (Input.GetKey(KeyCode.S))
         {
             animator.Play("Down");
+            
         }
-        if (Input.GetKeyDown(KeyCode.D))
+
+        else if (Input.GetKey(KeyCode.D))
         {
             animator.Play("Right");
+            
         }
-      
+        else
+        {
+            animator.Play("Idle");
+           
+        }
+
     }
 
   

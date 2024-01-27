@@ -10,6 +10,7 @@ public class Reloj : MonoBehaviour
     private Image image;
     private GameObject Player;
     [SerializeField]  private GameObject Padre;
+    [SerializeField] private GameObject RelojDeMesa;
     private void Start()
     {
 
@@ -35,7 +36,17 @@ public class Reloj : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.Escape))
         {
             Player.SetActive(true);
-            Padre.SetActive(false);
+            if (imagenDeAhora == 2)
+            {
+                BarraDeVida.Instance.ActoTerrorista(0,25);
+                ActivarReloj activarReloj = RelojDeMesa.GetComponent<ActivarReloj>();
+                Destroy(activarReloj);
+                Destroy(Padre);
+            }
+            else
+            {
+                Padre.SetActive(false);
+            }
         }
     }
 }

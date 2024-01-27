@@ -18,8 +18,8 @@ public class BarraDeVida : MonoBehaviour
     {
         Instance = this;
         ObjetoVentanaManager = GameObject.Find("VentanaManager");
-        VentanaManager = ObjetoVentanaManager.GetComponent
-        VentanaManager.instance.Muertos += MuerteGrupo2;
+        ventanaManager = ObjetoVentanaManager.GetComponent<VentanaManager>();
+        ventanaManager.Muertos += MuerteGrupo2;
     }
     void Update()
     {
@@ -47,10 +47,10 @@ public class BarraDeVida : MonoBehaviour
     }
     private void OnDestroy()
     {
-        VentanaManager.instance.Muertos -= MuerteGrupo2;
+        ventanaManager.Muertos -= MuerteGrupo2;
     }
     private void OnDisable()
     {
-        VentanaManager.instance.Muertos -= MuerteGrupo2;
+        ventanaManager.Muertos -= MuerteGrupo2;
     }
 }

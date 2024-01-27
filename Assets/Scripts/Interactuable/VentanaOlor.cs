@@ -12,8 +12,12 @@ public class VentanaOlor : MonoBehaviour
     [SerializeField] private float OlorActual = 0;
     public Color nuevoColor;
     private bool terrorismoCometido = false;
+    private GameObject ObjetoVentanaManager;
+    private VentanaManager ventanaManager;
     void Start()
     {
+        ObjetoVentanaManager = GameObject.Find("VentanaManager");
+        ventanaManager = ObjetoVentanaManager.GetComponent<VentanaManager>();
         ventana = gameObject.GetComponent<Ventana>();
     }
 
@@ -40,7 +44,7 @@ public class VentanaOlor : MonoBehaviour
     }
     private void TerrorismoOlor()
     {
-        VentanaManager.instance.ActivarMuerto();
+        ventanaManager.ActivarMuerto();
         SpriteRenderer spriteRenderer = GetComponent<SpriteRenderer>();
         spriteRenderer.color = nuevoColor;
         Destroy(ventana);

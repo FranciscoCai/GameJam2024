@@ -22,12 +22,27 @@ public class Movement : MonoBehaviour
 
     void Update()
     {
+
+        if(PlayerGroup.Instance.estadoJugador == PlayerState.NoTrabajando)
+        {
+            ActuarMovimiento();
+        }
+        else
+        {
+            rb.velocity = Vector2.zero;
+            animator.Play("Idle");
+            if (Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.W))
+            {
+                PlayerGroup.Instance.estadoJugador = PlayerState.NoTrabajando;
+            }
+        }
+    }
+    private void ActuarMovimiento()
+    {
         float horizontalInput = Input.GetAxis("Horizontal");
         float verticalInput = Input.GetAxis("Vertical");
 
         Vector2 movement = new Vector2(horizontalInput, verticalInput);
-
-
         if (Input.GetKey(KeyCode.A) && Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.S) && Input.GetKey(KeyCode.W))
         {
             animator.Play("Idle");
@@ -38,7 +53,7 @@ public class Movement : MonoBehaviour
             animator.Play("Up");
             rb.velocity = movement * moveSpeed;
         }
-        
+
         else if (Input.GetKey(KeyCode.A))
         {
             animator.Play("Left");
@@ -64,6 +79,5 @@ public class Movement : MonoBehaviour
 
     }
 
-  
 }
 

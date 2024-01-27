@@ -27,7 +27,7 @@ public class Enchufe : MonoBehaviour, Interactuable
     public void Interactuar()
     {
 
-       // animator.Play("Cafe");
+        animator.Play("Cable");
         StartCoroutine(Muerte(0.01f));
         DesactivarCollider();
 
@@ -38,7 +38,7 @@ public class Enchufe : MonoBehaviour, Interactuable
 
         yield return new WaitForSeconds(tiempoDeEspera);
 
-        BarraDeVida.Instance.ActoTerrorista(2, 10);
+        BarraDeVida.Instance.ActoTerrorista(3, 10);
 
     }
     void DesactivarCollider()

@@ -4,9 +4,11 @@ public class Interaction : MonoBehaviour
 {
     [SerializeField] private float circleArea;
     [SerializeField] private LayerMask gameObjectInteratuable;
+
+    private Animator animator;
     void Start()
     {
-
+        animator = GetComponent<Animator>();
     }
     void Update()
     {
@@ -32,6 +34,8 @@ public class Interaction : MonoBehaviour
             {
                 gameObject.transform.position = objetoDetectado.transform.position;
                 PlayerGroup.Instance.estadoJugador = PlayerState.Trabajando;
+                animator.Play("Trabajo");
+                Debug.Log(1);
             }
         }
     }

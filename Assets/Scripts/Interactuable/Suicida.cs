@@ -32,7 +32,7 @@ public class Suicida : MonoBehaviour
         
         yield return new WaitForSeconds(tiempoDeEspera);
 
-
+        BarraDeVida.Instance.ActoTerrorista(0, 10);
         Destroy(gameObject);
     }
 }

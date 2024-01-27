@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class BarraDeVida : MonoBehaviour
 {
@@ -10,8 +11,9 @@ public class BarraDeVida : MonoBehaviour
     [SerializeField] private float[] ExperienciaNecesariaLosGrupos;
     [SerializeField] private float[] VelocidadDeAumentoEnGrupo;
     public static BarraDeVida Instance;
+    public string GameOver;
 
-    private void Awake()
+    private void Start()
     {
         Instance = this;
 
@@ -22,7 +24,12 @@ public class BarraDeVida : MonoBehaviour
         for (int i = 0; i < Grupos.Length; i++)
         {
             Grupos[i].fillAmount += (Time.deltaTime * VelocidadDeAumentoEnGrupo[i])/ ExperienciaNecesariaLosGrupos[i];
+            if (Grupos[i].fillAmount ==1)
+            {
+                SceneManager.LoadScene(GameOver);
+            }
         }
+       
     }
     public void ActoTerrorista(int numeroDeEquipo, float numeroDeTerrorismo)
     {

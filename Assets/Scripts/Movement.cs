@@ -52,6 +52,10 @@ public class Movement : MonoBehaviour
             animator.Play("Right");
             
         }
+        else if (Input.GetKey(KeyCode.D)|| Input.GetKey(KeyCode.S)|| Input.GetKey(KeyCode.A))|| Input.GetKey(KeyCode.W))
+        {
+            animator.Play("Idle");
+        }
         else
         {
             animator.Play("Idle");

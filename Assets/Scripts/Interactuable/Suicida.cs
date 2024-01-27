@@ -24,7 +24,7 @@ public class Suicida : MonoBehaviour
         {
             Debug.Log("odio mi via");
             animator.Play("Suicidio");
-            StartCoroutine(Muerte(1f));
+            StartCoroutine(Muerte(5f));
         }
     }
     IEnumerator Muerte(float tiempoDeEspera)

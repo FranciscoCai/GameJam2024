@@ -5,11 +5,18 @@ using UnityEngine;
 public class ActivarAireAcondicionado : MonoBehaviour, Interactuable
 {
     [SerializeField] private GameObject CanvasAire;
+    private GameObject ObjetoAireManager;
+    private AireManager aireManager;
+    void Start()
+    {
+        ObjetoAireManager = GameObject.Find("AireManager");
+        aireManager = ObjetoAireManager.GetComponent<AireManager>();
+    }
     public void Interactuar()
     {
         if(CanvasAire.activeSelf)
         {
-            BarraDeVida.Instance.ActoTerrorista(3, 40);
+            aireManager.ActivarMuertoAire();
             Destroy(CanvasAire);
             Destroy(this);
         }

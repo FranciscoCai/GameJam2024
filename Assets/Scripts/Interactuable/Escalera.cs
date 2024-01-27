@@ -20,7 +20,6 @@ public class Escalera : MonoBehaviour, Interactuable
     {
         if (gameObject.transform.localPosition.x == 14.3f && gameObject.transform.localPosition.y == -25.24f)
         {
-            Debug.Log(1111);
            
             animator.Play("Escalera");
             StartCoroutine(Muerte(1f));

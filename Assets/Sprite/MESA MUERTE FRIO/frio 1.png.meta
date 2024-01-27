@@ -1,10 +1,16 @@
 fileFormatVersion: 2
-guid: ec9882fe68e896d47817ef6ad5d92de2
+guid: 35f1751004f357046b6fe1f99dc1fc9a
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2949978679645805591
-    second: MANDO AIRE_0
+      213: 3080230205418827297
+    second: frio 1_0
+  - first:
+      213: 5711034158006959526
+    second: frio 1_1
+  - first:
+      213: 5269920285483499740
+    second: frio 1_2
   externalObjects: {}
   serializedVersion: 12
   mipmaps:
@@ -51,7 +57,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 15
+  spritePixelsToUnits: 10
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -98,22 +104,64 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: MANDO AIRE_0
+      name: frio 1_0
       rect:
         serializedVersion: 2
-        x: 92
-        y: 51
+        x: 27
+        y: 30
         width: 18
-        height: 13
+        height: 33
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9e36cb045029f07d0800000000000000
-      internalID: -2949978679645805591
+      spriteID: 12eea645d0d2fba20800000000000000
+      internalID: 3080230205418827297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frio 1_1
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 30
+        width: 18
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ad7020fe4ba14f40800000000000000
+      internalID: 5711034158006959526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frio 1_2
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 30
+        width: 18
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd08ed21494822940800000000000000
+      internalID: 5269920285483499740
       vertices: []
       indices: 
       edges: []
@@ -121,7 +169,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 8e317d59ad19d7c43844028314a17ce5
     internalID: 0
     vertices: []
     indices: 
@@ -129,7 +177,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      MANDO AIRE_0: -2949978679645805591
+      frio 1_0: 3080230205418827297
+      frio 1_1: 5711034158006959526
+      frio 1_2: 5269920285483499740
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

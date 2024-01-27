@@ -9,7 +9,7 @@ public class BarraDeVida : MonoBehaviour
 
     [SerializeField] private Image[] Grupos;
     [SerializeField] private float[] ExperienciaNecesariaLosGrupos;
-    [SerializeField] private float[] VelocidadDeAumentoEnGrupo;
+    public float[] VelocidadDeAumentoEnGrupo;
     public static BarraDeVida Instance;
     public string GameOver;
     private GameObject ObjetoVentanaManager;

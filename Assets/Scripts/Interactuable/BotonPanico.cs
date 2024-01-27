@@ -7,9 +7,11 @@ public class BotonPanico : MonoBehaviour, Interactuable
     public bool suicido = false;
 
     private Animator animator;
+    private BoxCollider2D miCollider;
     // Start is called before the first frame update
     void Start()
     {
+        miCollider = GetComponent<BoxCollider2D>();
         animator = GetComponent<Animator>();
     }
 
@@ -25,6 +27,7 @@ public class BotonPanico : MonoBehaviour, Interactuable
         animator.Play("Boton");
 
         StartCoroutine(Muerte(0.15f));
+        DesactivarCollider();
 
 
     }
@@ -34,6 +37,13 @@ public class BotonPanico : MonoBehaviour, Interactuable
         yield return new WaitForSeconds(tiempoDeEspera);
 
         Destroy(animator);
+
+    }
+    void DesactivarCollider()
+    {
+
+        miCollider.enabled = false;
+
 
     }
 }

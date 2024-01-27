@@ -6,12 +6,15 @@ public class Puerta : MonoBehaviour, Interactuable
 {
     private BoxCollider2D miCollider;
 
+    private Animator animator;
+
     void Start()
     {
       
         miCollider = GetComponent<BoxCollider2D>();
 
-      
+        animator = GetComponent<Animator>();
+
         miCollider.isTrigger = false;
     }
 
@@ -27,6 +30,8 @@ public class Puerta : MonoBehaviour, Interactuable
    
     public void Interactuar()
     {
+        animator.Play("Puerta");
+
         InvokeRepeating("Terrorism", 0f, 2f);
 
         CambiarATrigger();

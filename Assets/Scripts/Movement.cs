@@ -30,7 +30,7 @@ public class Movement : MonoBehaviour
         else
         {
             rb.velocity = Vector2.zero;
-            animator.Play("Idle");
+            animator.Play("Trabajo");
             if (Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.W))
             {
                 PlayerGroup.Instance.estadoJugador = PlayerState.NoTrabajando;

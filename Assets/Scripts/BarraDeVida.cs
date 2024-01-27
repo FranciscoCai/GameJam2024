@@ -14,6 +14,7 @@ public class BarraDeVida : MonoBehaviour
     private void Awake()
     {
         Instance = this;
+
         VentanaManager.instance.Muertos += MuerteGrupo2;
     }
     void Update()

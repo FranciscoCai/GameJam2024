@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Interaction : MonoBehaviour
@@ -8,11 +6,11 @@ public class Interaction : MonoBehaviour
     [SerializeField] private LayerMask gameObjectInteratuable;
     void Start()
     {
-        
+
     }
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.F))
+        if (Input.GetKeyDown(KeyCode.F))
         {
             DetectGameObject();
         }
@@ -25,9 +23,13 @@ public class Interaction : MonoBehaviour
         {
             if (objetoDetectado.CompareTag("Enemy"))
             {
-                BarraDeVida.Instance.ActoTerrorista(0, 10);
+                if (objetoDetectado.TryGetComponent(out Interactuable interactuable))
+                {
+                    interactuable.Interactuar();
+                }
+                //BarraDeVida.Instance.ActoTerrorista(0, 10);
             }
-            else if(objetoDetectado.CompareTag("PlayerBoard"))
+            else if (objetoDetectado.CompareTag("PlayerBoard"))
             {
                 gameObject.transform.position = objetoDetectado.transform.position;
                 PlayerGroup.Instance.estadoJugador = PlayerState.Trabajando;

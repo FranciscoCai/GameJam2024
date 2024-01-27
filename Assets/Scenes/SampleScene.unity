@@ -930,9 +930,10 @@ GameObject:
   - component: {fileID: 765253901}
   - component: {fileID: 765253900}
   - component: {fileID: 765253902}
+  - component: {fileID: 765253903}
   m_Layer: 6
   m_Name: Square
-  m_TagString: PlayerBoard
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1050,6 +1051,18 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &765253903
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 765253899}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 046fdace8a3d4db49ab5b4196a6faf45, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &808764343
 GameObject:
   m_ObjectHideFlags: 0

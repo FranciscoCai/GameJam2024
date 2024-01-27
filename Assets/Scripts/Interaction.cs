@@ -27,7 +27,6 @@ public class Interaction : MonoBehaviour
                 {
                     interactuable.Interactuar();
                 }
-                //BarraDeVida.Instance.ActoTerrorista(0, 10);
             }
             else if (objetoDetectado.CompareTag("PlayerBoard"))
             {

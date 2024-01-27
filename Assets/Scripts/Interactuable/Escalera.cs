@@ -30,7 +30,7 @@ public class Escalera : MonoBehaviour, Interactuable
 
             yield return new WaitForSeconds(tiempoDeEspera);
 
-            BarraDeVida.Instance.ActoTerrorista(2, 10);
+            BarraDeVida.Instance.ActoTerrorista(2, 50);
             Destroy(gameObject);
         }
 

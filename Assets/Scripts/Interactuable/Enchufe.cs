@@ -38,7 +38,7 @@ public class Enchufe : MonoBehaviour, Interactuable
 
         yield return new WaitForSeconds(tiempoDeEspera);
 
-        BarraDeVida.Instance.ActoTerrorista(0, 10);
+        BarraDeVida.Instance.ActoTerrorista(2, 10);
 
     }
     void DesactivarCollider()

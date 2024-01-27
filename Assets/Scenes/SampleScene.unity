@@ -1231,6 +1231,7 @@ MonoBehaviour:
   OlorNecesario: 5
   RapidezDeIncremento: 1
   OlorActual: 0
+  nuevoColor: {r: 0.45490196, g: 0.7058824, b: 0.34901962, a: 1}
 --- !u!1 &808764343
 GameObject:
   m_ObjectHideFlags: 0

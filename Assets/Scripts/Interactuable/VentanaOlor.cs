@@ -4,10 +4,13 @@ using UnityEngine;
 
 public class VentanaOlor : MonoBehaviour
 {
+
+
     private Ventana ventana;
     [SerializeField] private float OlorNecesario;
     [SerializeField] private float RapidezDeIncremento;
     [SerializeField] private float OlorActual = 0;
+    public Color nuevoColor;
     private bool terrorismoCometido = false;
     void Start()
     {
@@ -37,9 +40,9 @@ public class VentanaOlor : MonoBehaviour
     }
     private void TerrorismoOlor()
     {
-        BarraDeVida.Instance.ActoTerrorista(0, 10);
+        VentanaManager.instance.ActivarMuerto();
         SpriteRenderer spriteRenderer = GetComponent<SpriteRenderer>();
-        spriteRenderer.color = Color.green;
+        spriteRenderer.color = nuevoColor;
         Destroy(ventana);
         Destroy(this);
     }

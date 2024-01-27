@@ -14,6 +14,7 @@ public class BarraDeVida : MonoBehaviour
     private void Awake()
     {
         Instance = this;
+        VentanaManager.instance.Muertos += MuerteGrupo2;
     }
     void Update()
     {
@@ -30,5 +31,16 @@ public class BarraDeVida : MonoBehaviour
             Grupos[numeroDeEquipo].fillAmount = 0;
         }
     }
-    
+    private void MuerteGrupo2()
+    {
+        VelocidadDeAumentoEnGrupo[1] = 0;
+    }
+    private void OnDestroy()
+    {
+        VentanaManager.instance.Muertos -= MuerteGrupo2;
+    }
+    private void OnDisable()
+    {
+        VentanaManager.instance.Muertos -= MuerteGrupo2;
+    }
 }

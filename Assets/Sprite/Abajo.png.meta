@@ -1,16 +1,19 @@
 fileFormatVersion: 2
-guid: df5840594ddc70d42a6f20332d05dc74
+guid: 65b1474601b61f14b9b78c9b83be8085
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6115712912299098585
-    second: BACK_0
+      213: -4823894710796432303
+    second: Abajo_0
   - first:
-      213: 3687032697426975983
-    second: BACK_1
+      213: -6880442741611512763
+    second: Abajo_1
   - first:
-      213: -3953360413733840975
-    second: BACK_2
+      213: 8296323142174906616
+    second: Abajo_2
+  - first:
+      213: 7215913467725104042
+    second: Abajo_3
   externalObjects: {}
   serializedVersion: 12
   mipmaps:
@@ -116,11 +119,11 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: BACK_0
+      name: Abajo_0
       rect:
         serializedVersion: 2
-        x: 10
-        y: 31
+        x: 16
+        y: 55
         width: 16
         height: 30
       alignment: 0
@@ -130,18 +133,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 72e742a328f902ba0800000000000000
-      internalID: -6115712912299098585
+      spriteID: 15cc71191551e0db0800000000000000
+      internalID: -4823894710796432303
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BACK_1
+      name: Abajo_1
       rect:
         serializedVersion: 2
-        x: 42
-        y: 31
+        x: 60
+        y: 55
         width: 16
         height: 30
       alignment: 0
@@ -151,18 +154,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: fec926d14b8fa2330800000000000000
-      internalID: 3687032697426975983
+      spriteID: 54cb4d8d7c1c380a0800000000000000
+      internalID: -6880442741611512763
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BACK_2
+      name: Abajo_2
       rect:
         serializedVersion: 2
-        x: 74
-        y: 31
+        x: 17
+        y: 12
         width: 16
         height: 30
       alignment: 0
@@ -172,8 +175,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1b79d4646a7d229c0800000000000000
-      internalID: -3953360413733840975
+      spriteID: 8f8103721f5722370800000000000000
+      internalID: 8296323142174906616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Abajo_3
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 12
+        width: 16
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa346bd3113142460800000000000000
+      internalID: 7215913467725104042
       vertices: []
       indices: 
       edges: []
@@ -189,9 +213,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      BACK_0: -6115712912299098585
-      BACK_1: 3687032697426975983
-      BACK_2: -3953360413733840975
+      Abajo_0: -4823894710796432303
+      Abajo_1: -6880442741611512763
+      Abajo_2: 8296323142174906616
+      Abajo_3: 7215913467725104042
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

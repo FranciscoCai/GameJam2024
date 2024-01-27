@@ -1,16 +1,19 @@
 fileFormatVersion: 2
-guid: a6e398c21b706564fa2efd1ceaf81316
+guid: c5ebf50d3d853c449a09d52d1e53be0e
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1165640211372167030
-    second: FRONTAL_0
+      213: -3103780489868026333
+    second: Arriba_0
   - first:
-      213: 58875878936842143
-    second: FRONTAL_1
+      213: -3689961770462038466
+    second: Arriba_1
   - first:
-      213: -5675083994981511045
-    second: FRONTAL_2
+      213: -1093632932897208685
+    second: Arriba_2
+  - first:
+      213: 4000163254294379331
+    second: Arriba_3
   externalObjects: {}
   serializedVersion: 12
   mipmaps:
@@ -116,32 +119,11 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: FRONTAL_0
+      name: Arriba_0
       rect:
         serializedVersion: 2
-        x: 10
-        y: 32
-        width: 16
-        height: 31
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: a8030415760d2dfe0800000000000000
-      internalID: -1165640211372167030
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: FRONTAL_1
-      rect:
-        serializedVersion: 2
-        x: 42
-        y: 33
+        x: 16
+        y: 55
         width: 16
         height: 30
       alignment: 0
@@ -151,20 +133,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f9f8ed9cc4b21d000800000000000000
-      internalID: 58875878936842143
+      spriteID: 32ed0a8c6182de4d0800000000000000
+      internalID: -3103780489868026333
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FRONTAL_2
+      name: Arriba_1
       rect:
         serializedVersion: 2
-        x: 74
-        y: 32
+        x: 60
+        y: 55
         width: 16
-        height: 31
+        height: 30
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -172,8 +154,50 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b705f98ac2d0e31b0800000000000000
-      internalID: -5675083994981511045
+      spriteID: e36b6dce15f9accc0800000000000000
+      internalID: -3689961770462038466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arriba_2
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 12
+        width: 16
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3964eff44a2a2d0f0800000000000000
+      internalID: -1093632932897208685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arriba_3
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 12
+        width: 16
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34b79c7394f638730800000000000000
+      internalID: 4000163254294379331
       vertices: []
       indices: 
       edges: []
@@ -189,9 +213,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      FRONTAL_0: -1165640211372167030
-      FRONTAL_1: 58875878936842143
-      FRONTAL_2: -5675083994981511045
+      Arriba_0: -3103780489868026333
+      Arriba_1: -3689961770462038466
+      Arriba_2: -1093632932897208685
+      Arriba_3: 4000163254294379331
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

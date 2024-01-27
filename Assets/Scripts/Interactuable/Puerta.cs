@@ -39,9 +39,9 @@ public class Puerta : MonoBehaviour, Interactuable
     }
     void CambiarATrigger()
     {
-       
-        miCollider.isTrigger = !miCollider.isTrigger;
 
-        
+        miCollider.enabled = false;
+
+
     }
 }

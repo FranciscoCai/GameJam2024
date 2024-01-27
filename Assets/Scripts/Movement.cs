@@ -27,39 +27,39 @@ public class Movement : MonoBehaviour
 
         Vector2 movement = new Vector2(horizontalInput, verticalInput);
 
-        rb.velocity = movement * moveSpeed;
 
-        if (Input.GetKey(KeyCode.W))
+        if (Input.GetKey(KeyCode.A) && Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.S) && Input.GetKey(KeyCode.W))
+        {
+            animator.Play("Idle");
+            rb.velocity = Vector2.zero;
+        }
+        else if (Input.GetKey(KeyCode.W))
         {
             animator.Play("Up");
-            
+            rb.velocity = movement * moveSpeed;
         }
         
         else if (Input.GetKey(KeyCode.A))
         {
             animator.Play("Left");
-            
+            rb.velocity = movement * moveSpeed;
         }
 
         else if (Input.GetKey(KeyCode.S))
         {
             animator.Play("Down");
-            
+            rb.velocity = movement * moveSpeed;
         }
 
         else if (Input.GetKey(KeyCode.D))
         {
             animator.Play("Right");
-            
-        }
-        else if (Input.GetKey(KeyCode.D)|| Input.GetKey(KeyCode.S)|| Input.GetKey(KeyCode.A))|| Input.GetKey(KeyCode.W))
-        {
-            animator.Play("Idle");
+            rb.velocity = movement * moveSpeed;
         }
         else
         {
             animator.Play("Idle");
-           
+            rb.velocity = Vector2.zero;
         }
 
     }

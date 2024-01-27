@@ -12,11 +12,13 @@ public class BarraDeVida : MonoBehaviour
     [SerializeField] private float[] VelocidadDeAumentoEnGrupo;
     public static BarraDeVida Instance;
     public string GameOver;
-
+    private GameObject ObjetoVentanaManager;
+    private VentanaManager ventanaManager;
     private void Start()
     {
         Instance = this;
-
+        ObjetoVentanaManager = GameObject.Find("VentanaManager");
+        VentanaManager = ObjetoVentanaManager.GetComponent
         VentanaManager.instance.Muertos += MuerteGrupo2;
     }
     void Update()

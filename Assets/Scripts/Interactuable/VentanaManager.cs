@@ -8,7 +8,7 @@ public class VentanaManager : MonoBehaviour
     public event DestruirOlor Muertos;
 
     public static VentanaManager instance;
-    private void Awake()
+    private void Start()
     {
         instance = this;       
     }

@@ -398,7 +398,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 1952295300}
-  ExperienciaNecesariaLosPlayer: 400
+  ExperienciaNecesariaLosPlayer: 300
   VelocidadDeAumentoEnPlayer: 6
   DisminucionDeVelocidad: 0.25
   AumentoDeVelocidad: 20
@@ -426,10 +426,10 @@ MonoBehaviour:
   - 100
   - 100
   VelocidadDeAumentoEnGrupo:
-  - 0.8
   - 2
+  - 4
+  - 3
   - 1.5
-  - 0.75
   GameOver: GameOver
 --- !u!114 &61759273
 MonoBehaviour:
@@ -2378,7 +2378,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.5833399, y: -0.06938815}
+  m_Offset: {x: 0.22005033, y: -0.06938815}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -2388,7 +2388,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 11.317146, y: 3.3697553}
+  m_Size: {x: 9.710366, y: 3.3697553}
   m_EdgeRadius: 0
 --- !u!212 &1219496887
 SpriteRenderer:
@@ -2451,7 +2451,7 @@ Transform:
   m_GameObject: {fileID: 1219496885}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -5.998979, y: -33.06942, z: 2.5276382}
+  m_LocalPosition: {x: -1.69, y: -32.43, z: 2.5276382}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -30209,7 +30209,7 @@ Transform:
   m_GameObject: {fileID: 1272684897}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.95, y: -9.25, z: 0}
+  m_LocalPosition: {x: -0.6410208, y: -8.61058, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -79454,7 +79454,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d11a81b3ad8b224478789cc3ef2e65c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  OlorNecesario: 5
+  OlorNecesario: 2.5
   RapidezDeIncremento: 1
   OlorActual: 0
   nuevoColor: {r: 0.45490196, g: 0.7058824, b: 0.34901962, a: 1}

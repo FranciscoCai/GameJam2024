@@ -20,5 +20,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Victoria.unity
     guid: 09fd0edea2265e843952b68bd4ad9420
+  - enabled: 1
+    path: Assets/Scenes/Creditos.unity
+    guid: bc4f2f0e34846ba4f80d7756a27ad98d
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0

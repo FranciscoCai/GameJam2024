@@ -217,7 +217,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a3ddf79f04cce448a7bc52cc30e8a71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Menu: MainMenu
+  Menu: Creditos
 --- !u!4 &205867594
 Transform:
   m_ObjectHideFlags: 0

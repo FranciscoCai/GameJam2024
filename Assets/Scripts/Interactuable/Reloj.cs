@@ -38,7 +38,7 @@ public class Reloj : MonoBehaviour
             Player.SetActive(true);
             if (imagenDeAhora == 2)
             {
-                BarraDeVida.Instance.ActoTerrorista(0,25);
+                BarraDeVida.Instance.VelocidadDeAumentoEnGrupo[0] = 0;
                 ActivarReloj activarReloj = RelojDeMesa.GetComponent<ActivarReloj>();
                 Collider2D miCollider = RelojDeMesa.GetComponent<Collider2D>();
                 miCollider.enabled = false;

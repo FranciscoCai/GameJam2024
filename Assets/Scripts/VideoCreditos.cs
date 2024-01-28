@@ -7,6 +7,7 @@ using UnityEngine.Video;
 public class VideoCreditos : MonoBehaviour
 {
     [SerializeField] private VideoPlayer video;
+    public string x;
     void Start()
     {
         video = GetComponent<VideoPlayer>();
@@ -14,7 +15,7 @@ public class VideoCreditos : MonoBehaviour
     }
     private void PasoDeEscena(VideoPlayer vp)
     {
-        SceneManager.LoadScene("MainMenu");
+        SceneManager.LoadScene(x);
     }
     // Update is called once per frame
     void Update()

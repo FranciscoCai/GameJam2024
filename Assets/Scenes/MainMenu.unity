@@ -754,7 +754,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b9d0f940f7108240ba72925b8871288, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Movement: Movement
+  Movement: Cinematica
 --- !u!4 &1485469133
 Transform:
   m_ObjectHideFlags: 0

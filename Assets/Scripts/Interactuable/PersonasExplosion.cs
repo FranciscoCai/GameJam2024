@@ -5,6 +5,9 @@ using UnityEngine;
 public class PersonasExplosion : MonoBehaviour
 {
     private Animator animator;
+
+    public GameObject Explosion;
+
     private void Start()
     {
         animator = GetComponent<Animator>();
@@ -20,6 +23,19 @@ public class PersonasExplosion : MonoBehaviour
     }
     public void MuerteGrupo1()
     {
-       // animator.Play("Escalera");
+        animator.Play("BoomJuan");
+        animator.Play("BoomTu");
+        animator.Play("BoomTree");
+        Explosion.SetActive(true);
+        StartCoroutine(Muerte(0.3f));
+
+    }
+    IEnumerator Muerte(float tiempoDeEspera)
+    {
+
+        yield return new WaitForSeconds(tiempoDeEspera);
+
+        
+        Destroy(gameObject);
     }
 }

@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Microondas : MonoBehaviour, Interactuable
 {
+    public GameObject putoSonido;
 
     private Animator animator;
     private BoxCollider2D miCollider;
@@ -23,6 +24,7 @@ public class Microondas : MonoBehaviour, Interactuable
     public void Interactuar()
     {
         animator.Play("Micro");
+        putoSonido.SetActive(true);
         miCollider.enabled = false;
         BarraDeVida.Instance.ActoTerrorista(0, 20);
         BarraDeVida.Instance.ActoTerrorista(1, 20);

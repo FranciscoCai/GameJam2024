@@ -4,8 +4,10 @@ using UnityEngine;
 
 public class PersonasExplosion : MonoBehaviour
 {
+    private Animator animator;
     private void Start()
     {
+        animator = GetComponent<Animator>();
         ExplosionManager.instance.MuerteExplosion += MuerteGrupo1;
     }
     private void OnDestroy()
@@ -18,6 +20,6 @@ public class PersonasExplosion : MonoBehaviour
     }
     public void MuerteGrupo1()
     {
-      
+       // animator.Play("Escalera");
     }
 }

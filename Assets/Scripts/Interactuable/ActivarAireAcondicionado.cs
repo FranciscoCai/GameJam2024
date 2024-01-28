@@ -6,6 +6,8 @@ public class ActivarAireAcondicionado : MonoBehaviour, Interactuable
 {
     [SerializeField] private GameObject CanvasAire;
     private GameObject ObjetoAireManager;
+    public GameObject sound;
+
     private AireManager aireManager;
     void Start()
     {
@@ -16,6 +18,7 @@ public class ActivarAireAcondicionado : MonoBehaviour, Interactuable
     {
         if(CanvasAire.activeSelf)
         {
+            sound.SetActive(true);
             aireManager.ActivarMuertoAire();
             Collider2D miCollider = GetComponent<Collider2D>();
             miCollider.enabled = false;

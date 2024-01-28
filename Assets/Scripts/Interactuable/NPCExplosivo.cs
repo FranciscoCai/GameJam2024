@@ -5,7 +5,7 @@ using UnityEngine;
 public class NPCExplosivo : MonoBehaviour
 {
     public Microondas microondas;
-
+    public GameObject explosion;
     private Animator animator;
 
     // Start is called before the first frame update
@@ -23,6 +23,7 @@ public class NPCExplosivo : MonoBehaviour
     {
         animator.Play("Alfonso");
         yield return new WaitForSeconds(tiempoDeEspera);
+        explosion.SetActive(true);
         Destroy(gameObject);
     }
 }

@@ -11,5 +11,7 @@ public class PlaySoundOnStart : MonoBehaviour
         SoundManager.Instance.PlaySound(_clip);
     }
 
+   
+
 
 }

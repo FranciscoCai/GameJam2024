@@ -9,6 +9,8 @@ public class Enchufe : MonoBehaviour, Interactuable
 
     private BoxCollider2D miCollider;
 
+    public GameObject audioSource;
+
     void Start()
     {
 
@@ -26,7 +28,7 @@ public class Enchufe : MonoBehaviour, Interactuable
 
     public void Interactuar()
     {
-
+        audioSource.SetActive(true);
         animator.Play("Cable");
         StartCoroutine(Muerte(0.01f));
         DesactivarCollider();

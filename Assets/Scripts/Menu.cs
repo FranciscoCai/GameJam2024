@@ -5,11 +5,14 @@ using UnityEngine.SceneManagement;
 
 public class Menu : MonoBehaviour
 {
+   
+
     public string Movement; 
 
     
     public void CargarEscena()
     {
+        
         SceneManager.LoadScene(Movement);
     }
 }

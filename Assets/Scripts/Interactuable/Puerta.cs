@@ -4,6 +4,7 @@ public class Puerta : MonoBehaviour, Interactuable
 {
     private BoxCollider2D miCollider;
     private Animator animator;
+    public GameObject audioSource;
     void Start()
     {
         miCollider = GetComponent<BoxCollider2D>();
@@ -12,6 +13,7 @@ public class Puerta : MonoBehaviour, Interactuable
     }
     public void Interactuar()
     {
+        audioSource.SetActive(true);
         animator.Play("Puerta");
         InvokeRepeating("Terrorism", 0f, 2f);
         CambiarATrigger();

@@ -28,7 +28,7 @@ public class Microondas : MonoBehaviour, Interactuable
         BarraDeVida.Instance.ActoTerrorista(1, 20);
         BarraDeVida.Instance.ActoTerrorista(2, 20);
         BarraDeVida.Instance.ActoTerrorista(3, 20);
-        StartCoroutine(Persona.Muerte(0.4f));
+        Persona.DestruirDespues();
         StartCoroutine(AAAAA(0.4f));
     }
     IEnumerator AAAAA(float wait)

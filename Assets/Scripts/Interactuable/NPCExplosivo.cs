@@ -14,7 +14,10 @@ public class NPCExplosivo : MonoBehaviour
         animator = GetComponent<Animator>();
     }
 
-    // Update is called once per frame
+    public void DestruirDespues()
+    {
+        StartCoroutine(Muerte(2.25f));
+    }
 
     public IEnumerator Muerte(float tiempoDeEspera)
     {

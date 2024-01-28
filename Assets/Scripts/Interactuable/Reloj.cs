@@ -39,6 +39,7 @@ public class Reloj : MonoBehaviour
             if (imagenDeAhora == 2)
             {
                 BarraDeVida.Instance.VelocidadDeAumentoEnGrupo[0] = 0;
+                ExplosionManager.instance.ActivarMuerteExplosion();
                 ActivarReloj activarReloj = RelojDeMesa.GetComponent<ActivarReloj>();
                 Collider2D miCollider = RelojDeMesa.GetComponent<Collider2D>();
                 miCollider.enabled = false;

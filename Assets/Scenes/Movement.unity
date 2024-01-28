@@ -741,6 +741,50 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &94920642
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 94920644}
+  - component: {fileID: 94920643}
+  m_Layer: 0
+  m_Name: ExplosionManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &94920643
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 94920642}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 486e38f198456c841ac067976893946a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &94920644
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 94920642}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 4.3922043, y: 0.7212142, z: 1.9167118}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &107643610
 GameObject:
   m_ObjectHideFlags: 0
@@ -3997,6 +4041,7 @@ GameObject:
   m_Component:
   - component: {fileID: 576692494}
   - component: {fileID: 576692493}
+  - component: {fileID: 576692495}
   m_Layer: 0
   m_Name: Persona
   m_TagString: Untagged
@@ -4072,6 +4117,18 @@ Transform:
   - {fileID: 1117175808}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &576692495
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 576692492}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c8a8b947c51de548bae6854488cf5fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &581378889
 GameObject:
   m_ObjectHideFlags: 0
@@ -5058,6 +5115,7 @@ GameObject:
   m_Component:
   - component: {fileID: 787024379}
   - component: {fileID: 787024378}
+  - component: {fileID: 787024380}
   m_Layer: 0
   m_Name: Persona3
   m_TagString: Untagged
@@ -5132,6 +5190,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &787024380
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 787024377}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c8a8b947c51de548bae6854488cf5fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &809722868
 GameObject:
   m_ObjectHideFlags: 0
@@ -37719,6 +37789,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1466441952}
   - component: {fileID: 1466441951}
+  - component: {fileID: 1466441953}
   m_Layer: 0
   m_Name: Persona2
   m_TagString: Untagged
@@ -37793,6 +37864,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1466441953
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1466441950}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c8a8b947c51de548bae6854488cf5fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1470445941 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2028835612312976495, guid: 23870e298afb11441b4c3d2b7737729c, type: 3}
@@ -87078,3 +87161,4 @@ SceneRoots:
   - {fileID: 1466441952}
   - {fileID: 576692494}
   - {fileID: 649142753}
+  - {fileID: 94920644}

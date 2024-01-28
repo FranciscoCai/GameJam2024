@@ -7,7 +7,8 @@ using UnityEngine.EventSystems;
 public class Movement : MonoBehaviour
 
 {
-    public float moveSpeed = 5f; 
+    public float moveSpeed = 5f;
+    public GameObject audio;
 
     private Rigidbody2D rb;
 
@@ -31,9 +32,11 @@ public class Movement : MonoBehaviour
         {
             rb.velocity = Vector2.zero;
             animator.Play("Trabajo");
+            audio.SetActive(true);
             if (Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.W))
             {
                 PlayerGroup.Instance.estadoJugador = PlayerState.NoTrabajando;
+                audio.SetActive(false);
             }
         }
     }

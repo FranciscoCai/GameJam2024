@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Escalera : MonoBehaviour, Interactuable
 {
+    public GameObject audio;
+
     private Animator animator;
     Collider2D miCollider;
     // Start is called before the first frame update
@@ -30,7 +32,7 @@ public class Escalera : MonoBehaviour, Interactuable
     {
         if (gameObject.transform.localPosition.x == 14.3f && gameObject.transform.localPosition.y == -25.24f)
         {
-           
+            audio.SetActive(true);
             animator.Play("Escalera");
             StartCoroutine(Muerte(1f));
         }

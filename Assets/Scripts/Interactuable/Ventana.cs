@@ -8,6 +8,9 @@ public enum VentanaState
 public class Ventana : MonoBehaviour, Interactuable
 {
     public VentanaState estadoVentana;
+    public GameObject audioAbrir;
+    public GameObject audioCerrar;
+
     private SpriteRenderer spriteVentana;
     [SerializeField] private Sprite[] SpriteEstadoVentana;
     private void Awake()
@@ -34,9 +37,13 @@ public class Ventana : MonoBehaviour, Interactuable
         {
             case VentanaState.Abierto:
                 spriteVentana.sprite = SpriteEstadoVentana[0];
+                audioAbrir.SetActive(true);
+                audioCerrar.SetActive(false);
                 break;
             case VentanaState.Cerrado:
                 spriteVentana.sprite = SpriteEstadoVentana[1];
+                audioCerrar.SetActive(true);
+                audioAbrir.SetActive(false);
                 break;
         }
     }

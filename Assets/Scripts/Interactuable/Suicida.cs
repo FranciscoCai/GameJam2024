@@ -8,6 +8,8 @@ public class Suicida : MonoBehaviour
 
     private Animator animator;
 
+   
+
     // Start is called before the first frame update
     void Start()
     {
@@ -22,6 +24,7 @@ public class Suicida : MonoBehaviour
 
         if (death == true)
         {
+            
             Debug.Log("odio mi via");
             animator.Play("Suicidio");
             StartCoroutine(Muerte(5f));

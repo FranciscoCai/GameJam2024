@@ -33,13 +33,15 @@ public class Reloj : MonoBehaviour
     }
     private void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Escape))
+        if(Input.GetKeyDown(KeyCode.Escape)|| Input.GetKeyDown(KeyCode.F))
         {
             Player.SetActive(true);
             if (imagenDeAhora == 2)
             {
                 BarraDeVida.Instance.ActoTerrorista(0,25);
                 ActivarReloj activarReloj = RelojDeMesa.GetComponent<ActivarReloj>();
+                Collider2D miCollider = RelojDeMesa.GetComponent<Collider2D>();
+                miCollider.enabled = false;
                 Destroy(activarReloj);
                 Destroy(Padre);
             }

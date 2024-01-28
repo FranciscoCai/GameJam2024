@@ -5,16 +5,26 @@ using UnityEngine;
 public class Escalera : MonoBehaviour, Interactuable
 {
     private Animator animator;
+    Collider2D miCollider;
     // Start is called before the first frame update
     void Start()
     {
         animator = GetComponent<Animator>();
+        miCollider = GetComponent<Collider2D>();
     }
    
     // Update is called once per frame
     void Update()
     {
-        
+        if (gameObject.transform.localPosition.x == 14.3f && gameObject.transform.localPosition.y == -25.24f)
+        {
+            miCollider.enabled = true;
+
+        }
+        else
+        {
+            miCollider.enabled = false;
+        }
     }
     public void Interactuar()
     {

@@ -47,6 +47,8 @@ public class VentanaOlor : MonoBehaviour
         ventanaManager.ActivarMuerto();
         SpriteRenderer spriteRenderer = GetComponent<SpriteRenderer>();
         spriteRenderer.color = nuevoColor;
+        Collider2D miCollider = GetComponent<Collider2D>();
+        miCollider.enabled = false;
         Destroy(ventana);
         Destroy(this);
     }

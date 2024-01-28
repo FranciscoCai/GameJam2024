@@ -4,6 +4,7 @@ public class Interaction : MonoBehaviour
 {
     [SerializeField] private float circleArea;
     [SerializeField] private LayerMask gameObjectInteratuable;
+    [SerializeField] private GameObject FIndicacion;
 
     private Animator animator;
     void Start()
@@ -12,29 +13,37 @@ public class Interaction : MonoBehaviour
     }
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.F))
-        {
             DetectGameObject();
-        }
     }
     private void DetectGameObject()
     {
         Collider2D objetoDetectado = Physics2D.OverlapCircle(transform.position, circleArea, gameObjectInteratuable);
-
-        if (objetoDetectado != null)
+        if(PlayerGroup.Instance.estadoJugador == PlayerState.Trabajando )
         {
-            if (objetoDetectado.CompareTag("Enemy"))
+            FIndicacion.SetActive(false);
+        }
+        else if (objetoDetectado != null)
+        {
+            FIndicacion.SetActive(true);
+            if (Input.GetKeyDown(KeyCode.F))
             {
-                if (objetoDetectado.TryGetComponent(out Interactuable interactuable))
+                if (objetoDetectado.CompareTag("Enemy"))
                 {
-                    interactuable.Interactuar();
+                    if (objetoDetectado.TryGetComponent(out Interactuable interactuable))
+                    {
+                        interactuable.Interactuar();
+                    }
+                }
+                else if (objetoDetectado.CompareTag("PlayerBoard"))
+                {
+                    gameObject.transform.position = objetoDetectado.transform.position;
+                    PlayerGroup.Instance.estadoJugador = PlayerState.Trabajando;
                 }
             }
-            else if (objetoDetectado.CompareTag("PlayerBoard"))
-            {
-                gameObject.transform.position = objetoDetectado.transform.position;
-                PlayerGroup.Instance.estadoJugador = PlayerState.Trabajando;
-            }
+        }
+        else
+        {
+            FIndicacion.SetActive(false);
         }
     }
 }

@@ -17,6 +17,8 @@ public class ActivarAireAcondicionado : MonoBehaviour, Interactuable
         if(CanvasAire.activeSelf)
         {
             aireManager.ActivarMuertoAire();
+            Collider2D miCollider = GetComponent<Collider2D>();
+            miCollider.enabled = false;
             Destroy(CanvasAire);
             Destroy(this);
         }

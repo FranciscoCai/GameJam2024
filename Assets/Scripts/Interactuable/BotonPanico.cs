@@ -5,6 +5,7 @@ using UnityEngine;
 public class BotonPanico : MonoBehaviour, Interactuable
 {
     public bool suicido = false;
+    public GameObject audioSource;
 
     private Animator animator;
     private BoxCollider2D miCollider;
@@ -24,7 +25,11 @@ public class BotonPanico : MonoBehaviour, Interactuable
     {
         suicido = true;
 
+        audioSource.SetActive(true);
+
         animator.Play("Boton");
+
+        StartCoroutine(Audio(5f));
 
         StartCoroutine(Muerte(0.15f));
         DesactivarCollider();
@@ -37,6 +42,14 @@ public class BotonPanico : MonoBehaviour, Interactuable
         yield return new WaitForSeconds(tiempoDeEspera);
 
         Destroy(animator);
+
+    }
+    IEnumerator Audio(float wait)
+    {
+
+        yield return new WaitForSeconds(wait);
+
+        audioSource.SetActive(false);
 
     }
     void DesactivarCollider()

@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEditorInternal.Profiling.Memory.Experimental.FileFormat;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 public enum PlayerState
 {
@@ -47,6 +48,10 @@ public class PlayerGroup : MonoBehaviour
                     VelocidadDeAumentoEnPlayer = 0;
                 }
                 break;
+        }
+        if(Player.fillAmount >= 1) 
+        {
+            SceneManager.LoadScene("Victoria");
         }
        
     }

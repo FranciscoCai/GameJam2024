@@ -869,7 +869,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Player: {fileID: 808764345}
   ExperienciaNecesariaLosPlayer: 500
-  VelocidadDeAumentoEnPlayer: 10
+  VelocidadDeAumentoEnPlayer: 25
   DisminucionDeVelocidad: 2
   AumentoDeVelocidad: 2
   estadoJugador: 1

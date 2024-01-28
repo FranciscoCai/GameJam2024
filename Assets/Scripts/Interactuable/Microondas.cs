@@ -22,12 +22,20 @@ public class Microondas : MonoBehaviour, Interactuable
     }
     public void Interactuar()
     {
+        animator.Play("Micro");
         miCollider.enabled = false;
         BarraDeVida.Instance.ActoTerrorista(0, 20);
         BarraDeVida.Instance.ActoTerrorista(1, 20);
         BarraDeVida.Instance.ActoTerrorista(2, 20);
         BarraDeVida.Instance.ActoTerrorista(3, 20);
         StartCoroutine(Persona.Muerte(0.4f));
+        StartCoroutine(AAAAA(0.4f));
     }
-   
+    IEnumerator AAAAA(float wait)
+    {
+        yield return new WaitForSeconds(wait);
+
+        Destroy(gameObject);
+    }
+
 }

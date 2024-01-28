@@ -26,24 +26,12 @@ public class PlayerGroup : MonoBehaviour
         switch (estadoJugador)
         {
             case PlayerState.Trabajando:
-                if (VelocidadDeAumentoInicial > VelocidadDeAumentoEnPlayer)
-                {
-                    VelocidadDeAumentoEnPlayer += (Time.deltaTime * AumentoDeVelocidad);
-                }
-                else
-                {
-                    VelocidadDeAumentoEnPlayer = VelocidadDeAumentoInicial;
-                }
+
+                    VelocidadDeAumentoEnPlayer = AumentoDeVelocidad;
+
                 break;
             case PlayerState.NoTrabajando:
-                if (VelocidadDeAumentoEnPlayer > 0)
-                {
-                    VelocidadDeAumentoEnPlayer -= (Time.deltaTime * DisminucionDeVelocidad);
-                }
-                else
-                {
-                    VelocidadDeAumentoEnPlayer = 0;
-                }
+                VelocidadDeAumentoEnPlayer = DisminucionDeVelocidad;
                 break;
         }
         if(Player.fillAmount >= 1) 

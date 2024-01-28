@@ -1,42 +1,20 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Puerta : MonoBehaviour, Interactuable
 {
     private BoxCollider2D miCollider;
-
     private Animator animator;
-
     void Start()
     {
-      
         miCollider = GetComponent<BoxCollider2D>();
-
         animator = GetComponent<Animator>();
-
         miCollider.isTrigger = false;
     }
-
-    void Update()
-    {
-        
-        
-        
-            
-        
-    }
-
-   
     public void Interactuar()
     {
         animator.Play("Puerta");
-
         InvokeRepeating("Terrorism", 0f, 2f);
-
         CambiarATrigger();
-
-
     }
     void Terrorism()
     {
@@ -44,9 +22,7 @@ public class Puerta : MonoBehaviour, Interactuable
     }
     void CambiarATrigger()
     {
-
+        PuertaManager.instance.ActivarMuertePuerta();
         miCollider.enabled = false;
-
-
     }
 }
